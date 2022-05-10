@@ -1,0 +1,58 @@
+nav {
+    height: 100px;
+    background-color: whitesmoke; opacity: 0.9;
+
+    .logo {
+        width: 20%
+      }
+  }
+
+#links{
+  font-family: 'Hind', sans-serif;
+  font-size: 1.2em;
+  margin-right: 1em;
+  padding:10px;
+  font-weight: 600;
+  color:black;
+    &:hover {
+      color: #920BBE;
+      border-style: solid;
+      border-radius: 10px;
+      border-color: #920BBE;
+      /*text-decoration: underline 2px;
+      text-underline-offset: 0.5em;*/
+    }
+}
+
+
+/*RESPONSIVE*/
+@media screen and (min-width: 320px) and (max-width:480px) {
+  nav {
+    height:100px;
+    .listaNav {
+      z-index: 100;
+      position:absolute;
+      width:100%;
+      margin-left: -10px;
+      background-color: pink;
+      padding: 2vh 10vh 2vh 10vh;
+    }
+  }
+  .cajaTalento {
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    h2 {
+      font-size: 1.6em;
+      margin-bottom: 3vh;
+      margin-top:0
+    }
+    h3 {
+      font-size: 1.2em;
+      margin-bottom: 1vh; 
+    }
+    p {
+      font-size: 1em;
+    }
+
+  }
+}

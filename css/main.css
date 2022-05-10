@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+nav {
+  height: 100px;
+  background-color: whitesmoke;
+  opacity: 0.9; }
+  nav .logo {
+    width: 20%; }
+
+#links {
+  font-family: 'Hind', sans-serif;
+  font-size: 1.2em;
+  margin-right: 1em;
+  padding: 10px;
+  font-weight: 600;
+  color: black; }
+  #links:hover {
+    color: #920BBE;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #920BBE;
+    /*text-decoration: underline 2px;
+      text-underline-offset: 0.5em;*/ }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  nav {
+    height: 100px; }
+    nav .listaNav {
+      z-index: 100;
+      position: absolute;
+      width: 100%;
+      margin-left: -10px;
+      background-color: pink;
+      padding: 2vh 10vh 2vh 10vh; }
+  .cajaTalento {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    .cajaTalento h2 {
+      font-size: 1.6em;
+      margin-bottom: 3vh;
+      margin-top: 0; }
+    .cajaTalento h3 {
+      font-size: 1.2em;
+      margin-bottom: 1vh; }
+    .cajaTalento p {
+      font-size: 1em; } }
+
+/*Seccion home*/
+.carousel-inner {
+  height: 600px;
+  top: 6px; }
+
+.tituloFoto1 {
+  margin-bottom: 44%;
+  background-color: #661951;
+  color: whitesmoke;
+  padding: 4vh;
+  font-family: 'Hind', sans-serif; }
+
+.tituloFoto2 {
+  margin-bottom: 40%;
+  background-color: #4A0D3A;
+  font-family: 'Hind', sans-serif;
+  font-weight: 700;
+  padding: 2vh 0vh 0vh 0vh;
+  font-size: 2em; }
+  .tituloFoto2 p {
+    background-color: gray;
+    font-size: 0.7em;
+    padding: 2vh;
+    font-family: 'Hind', sans-serif; }
+
+.fotoEmpleo {
+  opacity: 0.7; }
+
+.tituloFoto3 {
+  margin-bottom: 30%;
+  color: black;
+  font-weight: 800;
+  font-family: 'Hind', sans-serif;
+  font-size: 2.5em; }
+
+.linkCV {
+  margin-top: -55%; }
+
+.quienesSomos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 10vh;
+  height: 600px; }
+  .quienesSomos .tituloQuienes {
+    background-color: #4A0D3A;
+    color: white;
+    padding: 6vh;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: 'Quicksand', sans-serif; }
+  .quienesSomos .textoQuienes {
+    margin-top: 8%;
+    line-height: 2.2em;
+    font-size: 1.1em;
+    font-family: 'Quicksand', sans-serif; }
+    .quienesSomos .textoQuienes a {
+      text-decoration: none;
+      color: #A63CD1;
+      font-weight: bold; }
+
+.tituloPilares {
+  color: #4A0D3A;
+  border-bottom-style: double;
+  border-color: #4A0D3A;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 8vh 2vh 4vh 2vh;
+  margin-top: 10px; }
+
+.pilares {
+  padding: 7vh 4vh 12vh 4vh;
+  border-color: transparent;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 2em; }
+  .pilares h3 {
+    font-size: 2.1em;
+    font-weight: 300; }
+  .pilares .fotoPilares {
+    width: 25%;
+    margin-left: 40%; }
+  .pilares .fotoEficiencia {
+    width: 14%;
+    margin-left: 40%;
+    margin-bottom: 10px; }
+
+.pilares:hover {
+  background-color: #e6e6e6; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .carousel-inner {
+    height: 400px;
+    top: 10px; } }
+
+/*Seccion nuestro equipo*/
+header {
+  background-image: url(../imagenes/header2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px; }
+  header .tituloEquipo {
+    color: #661951;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    padding: 6vh 0vh 3vh 0vh;
+    border-bottom-style: double;
+    margin-left: 20%;
+    margin-right: 20%; }
+  header hr {
+    width: 60%;
+    margin-left: 20%;
+    background-color: #661951; }
+
+.cajaEquipo {
+  border-color: transparent;
+  background-color: transparent;
+  padding: 4vh;
+  margin-top: 8vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  .cajaEquipo h4 {
+    font-family: 'Hind', sans-serif;
+    font-weight: bold; }
+  .cajaEquipo p {
+    color: black;
+    font-family: 'Hind', sans-serif;
+    font-size: 1.2em;
+    line-height: 2em; }
+  .cajaEquipo img {
+    width: 10%; }
+  .cajaEquipo .cajas:hover {
+    animation: shadow-pulse 1500ms 1;
+    background-color: #e2dfdf;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; }
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #661951; }
+  100% {
+    box-shadow: 0 0 8px 16px rgba(32, 226, 215, 0); } }
+
+.cajaFormularioTitulos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2vh 2vh 7vh 2vh;
+  margin-top: -20px;
+  background-image: url(../imagenes/wave.svg);
+  opacity: 0.8;
+  background-repeat: no-repeat; }
+  .cajaFormularioTitulos .titulos {
+    margin-top: 10vh;
+    height: 500px;
+    padding: 2vh 6vh 2vh 6vh;
+    background-color: transparent;
+    border-color: transparent; }
+    .cajaFormularioTitulos .titulos h2 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 8vh; }
+    .cajaFormularioTitulos .titulos p {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.5em;
+      margin-bottom: 8vh; }
+    .cajaFormularioTitulos .titulos .cvWorku {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 2em; }
+  .cajaFormularioTitulos .formulario {
+    margin-top: 16vh;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    font-family: 'Hind', sans-serif; }
+    .cajaFormularioTitulos .formulario .contanos {
+      font-weight: bold;
+      font-size: 1.2em; }
+    .cajaFormularioTitulos .formulario .botonEnviar {
+      position: relative;
+      display: inline-block;
+      width: 40%;
+      margin-left: 30%;
+      margin-top: 10px;
+      padding: 8px 14px 8px 14px;
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      color: #725AC1;
+      background: transparent;
+      cursor: pointer;
+      transition: ease-out 0.5s;
+      border-radius: 30px;
+      border: 2px solid #725AC1;
+      border-radius: 10px;
+      box-shadow: inset 0 0 0 0 #725AC1; }
+      .cajaFormularioTitulos .formulario .botonEnviar:hover {
+        color: white;
+        box-shadow: inset 0 -100px 0 0 #725AC1; }
+      .cajaFormularioTitulos .formulario .botonEnviar:active {
+        transform: scale(0.9); }
+
+/*Seccion servicios*/
+.cajaBusquedas {
+  height: 400px;
+  padding: 4vh 20vh 4vh 20vh;
+  background-image: url(../imagenes/busquedas.png);
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-color: transparent; }
+  .cajaBusquedas h1 {
+    color: #661951;
+    font-size: 2.3em;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    padding: 3vh 0vh 3vh 0vh;
+    border-bottom-style: double;
+    margin-left: 20%;
+    margin-right: 20%; }
+  .cajaBusquedas p {
+    font-family: 'Hind', sans-serif;
+    color: black;
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 2em;
+    margin-top: 3em; }
+
+.tituloSeleccion {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em;
+  margin-top: 12vh;
+  font-weight: bold;
+  color: #661951; }
+
+.cajaSeleccion {
+  margin: 3vh 0vh 6vh 0vh;
+  padding: 8vh 4vh 20vh 4vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .cajaSeleccion .card {
+    border-color: transparent; }
+  .cajaSeleccion .seleccionCards {
+    border-color: gray;
+    box-shadow: 0.3em 0.2em 2em 0.2em #C8BAF5;
+    width: 100%;
+    margin-bottom: 4vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 7vh 1vh 7vh 1vh;
+    cursor: pointer;
+    transition: ease-out 0.8s; }
+  .cajaSeleccion .seleccionCards:hover .textoSeleccion {
+    display: block; }
+  .cajaSeleccion .seleccionCards:hover {
+    background-color: #C8BAF5;
+    transition: ease-out 0.8s; }
+  .cajaSeleccion .tituloCard {
+    font-size: 1.5em;
+    color: #4A0D3A;
+    font-weight: bolder;
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic; }
+
+.cajaTalento {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 4vh;
+  background-image: url(../imagenes/wave.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8vh 4vh 14vh 2vh; }
+  .cajaTalento .card {
+    border-color: transparent;
+    background-color: transparent; }
+  .cajaTalento h2 {
+    font-family: 'Quicksand', sans-serif;
+    color: #4A0D3A;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 6vh; }
+  .cajaTalento h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 6vh; }
+  .cajaTalento p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.5em; }
+
+.formularioEmpresa {
+  margin-left: 1vh; }
+  .formularioEmpresa label {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800; }
+  .formularioEmpresa .botonEnviar {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    margin-left: 30%;
+    padding: 8px 14px 8px 14px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 30px;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1; }
+    .formularioEmpresa .botonEnviar:hover {
+      color: white;
+      box-shadow: inset 0 -100px 0 0 #725AC1; }
+    .formularioEmpresa .botonEnviar:active {
+      transform: scale(0.9); }
+
+.cajaCoaching {
+  padding: 14vh 10vh 14vh 10vh; }
+  .cajaCoaching h2 {
+    font-family: 'Quicksand', sans-serif;
+    color: #4A0D3A;
+    font-size: 2.5em;
+    margin-bottom: 6vh; }
+  .cajaCoaching h3 {
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 6vh; }
+  .cajaCoaching p {
+    font-family: 'Quicksand', sans-serif; }
+
+/*Seccion busquedas*/
+.busquedas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+/*Seccion contacto*/
+.textoYlogo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .textoYlogo .logoFooter {
+    width: 40%;
+    margin-left: 34%; }
+  .textoYlogo p {
+    margin-top: 30px; }
+
+.footerCards {
+  background-color: #F7BF00;
+  height: 380px;
+  padding-top: 8vh;
+  border-color: transparent; }
+  .footerCards .cajaTel, .footerCards .cajaMail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1.7vh; }
+  .footerCards .cajaTel p, .footerCards .cajaMail p {
+    margin-left: 1vh; }
+  .footerCards .iconosRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 9vh; }
+    .footerCards .iconosRedes img {
+      width: 30px; }
+  .footerCards .listaFooter li {
+    border-color: transparent;
+    background-color: #F7BF00; }
+    .footerCards .listaFooter li a {
+      text-decoration: none;
+      color: black; }
+
+.cajaWpp {
+  background-color: blue;
+  padding: 20px;
+  width: 30%;
+  float: right; }
+  .cajaWpp p {
+    margin-left: 50%; }
+  .cajaWpp img {
+    width: 70px;
+    float: right;
+    margin-top: -60px; }
+
+#copyright {
+  background-color: gray;
+  height: 50px;
+  padding: 10px 0px 20px 0px; }
+
+/*RESPONSIVE*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    background-color: #F7BF00; }
+  .footerCards {
+    height: 320px;
+    padding-top: 0vh; }
+  #copyright p {
+    font-size: 0.7em;
+    background-color: white; } }
